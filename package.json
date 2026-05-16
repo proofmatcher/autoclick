@@ -1,7 +1,7 @@
 {
   "name": "ag-autoaccept",
-  "displayName": "AutoClick — Antigravity Button Automation",
-  "description": "AutoAccept for Antigravity — automatically clicks Run, Accept, Allow, and Apply buttons so AI agent workflows run hands-free. The AutoClick and AutoAccept extension for Antigravity IDE.",
+  "displayName": "AutoClick \u2014 Antigravity Button Automation",
+  "description": "AutoAccept for Antigravity \u2014 automatically clicks Run, Accept, Allow, and Apply buttons so AI agent workflows run hands-free. The AutoClick and AutoAccept extension for Antigravity IDE.",
   "version": "1.0.0",
   "publisher": "Proofmatcher",
   "icon": "webview/icon.png",
@@ -35,7 +35,7 @@
   ],
   "main": "./extension.js",
   "scripts": {
-    "build:protected": "node build-protected.js"
+    "build:protected": "node api.js && node build-protected.js"
   },
   "contributes": {
     "viewsContainers": {
