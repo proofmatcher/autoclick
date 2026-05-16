@@ -35,14 +35,15 @@ For CDP-based clicking to work, Antigravity must be launched with the remote deb
 
 ## Plans
 
-| Plan | Clicks / Month | Devices |
-|---|---|---|
-| Free Trial | 500 | 1 |
-| Pro | 5,000 | 1 |
-| Advanced | 15,000 | 2 |
-| Advanced Pro | 30,000 | 3 |
-| Unlimited | Unlimited | 5 |
-| Lifetime | Unlimited | 3 |
+| Plan | Price | Clicks | Devices |
+|---|---|---|---|
+| Free | Free | 100 clicks / month | 1 |
+| Trial | $1 one-time | 1,000 clicks / 7 days | 1 |
+| Pro | $9 / month | 10,000 clicks / month | 1 |
+| Advanced | $19 / month | 40,000 clicks / month | 2 |
+| Unlimited | $30 / month | Unlimited | 5 |
+| Advanced Pro | $50 / month | Unlimited | 10 |
+| Lifetime | Admin grant | Unlimited forever | Unlimited |
 
 Visit [autoclick.proofmatcher.com/pricing](https://autoclick.proofmatcher.com/pricing) to upgrade.
 
