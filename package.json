@@ -1,0 +1,104 @@
+{
+  "name": "ag-autoaccept",
+  "displayName": "AutoClick — Antigravity Button Automation",
+  "description": "AutoAccept for Antigravity — automatically clicks Run, Accept, Allow, and Apply buttons so AI agent workflows run hands-free. The AutoClick and AutoAccept extension for Antigravity IDE.",
+  "version": "1.0.0",
+  "publisher": "Proofmatcher",
+  "icon": "webview/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antigravity/autoclick"
+  },
+  "homepage": "https://autoclick.proofmatcher.com",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Other"
+  ],
+  "keywords": [
+    "autoaccept",
+    "autoclick",
+    "antigravity",
+    "ai",
+    "automation",
+    "agent",
+    "workflow",
+    "productivity",
+    "auto accept",
+    "auto click",
+    "hands-free"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "build:protected": "node build-protected.js"
+  },
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "autoclick-sidebar",
+          "title": "AutoClick",
+          "icon": "webview/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "autoclick-sidebar": [
+        {
+          "type": "webview",
+          "id": "autoclick.sidebarView",
+          "name": "AutoClick",
+          "when": "true"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "agAutoAccept.toggle",
+        "title": "AutoClick: Toggle On/Off",
+        "icon": "$(mouse)"
+      },
+      {
+        "command": "agAutoAccept.acceptNow",
+        "title": "AutoClick: Click All Now"
+      },
+      {
+        "command": "agAutoAccept.showDashboard",
+        "title": "AutoClick: Show Dashboard"
+      },
+      {
+        "command": "agAutoAccept.enterApiKey",
+        "title": "AutoClick: Enter / Change API Key",
+        "icon": "$(key)"
+      }
+    ],
+    "configuration": {
+      "title": "AutoClick",
+      "properties": {
+        "agAutoAccept.pollInterval": {
+          "type": "number",
+          "default": 1500,
+          "scope": "window",
+          "description": "How often AutoClick polls for pending buttons, in milliseconds."
+        },
+        "agAutoAccept.autoAcceptFileEdits": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Automatically accept file edits (Accept All). Disable to review diffs before they are applied."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^5.4.2"
+  },
+  "dependencies": {
+    "ws": "^8.20.1"
+  }
+}
